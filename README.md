@@ -17,12 +17,13 @@ Dan tambahkan dependencies
 dependencies {
     implementation 'com.github.rafligoodramadhan:popuprating:0.0.1'
 }
+
 ------------------------------------------------------------------------------------------------------------------------------
 Sample Code
 
 PopupRating popupRating = new PopupRating(MainActivity.this);
 
-/*Popup akan sekuar selian value yang di isikan*/
+/*Popup akan kelaur sesaui value yang di isikan*/
 
 int value  = 5;
 popupRating.setBukaSetiap(value);
