@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PopRat</string>
+    <string name="bagaimana_penilaianmu">Bagaimana penilaianmu dengan aplikasi ini ?</string>
+    <string name="tidak">Tidak</string>
+    <string name="iya">Iya</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="berbagi_pengalaman">Apakah anda ingin berbagi pengalamanmu di Play Store ?</string>
+    <string name="masukan_rating">Silahkan masukan rating</string>
+</resources>
