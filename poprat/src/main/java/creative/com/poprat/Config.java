@@ -8,6 +8,8 @@ public class Config {
     public static final String BUKA_SETIAP = "BUKASETIAP";
     public static final String BUKA_SAATINI = "BUKA_SAATINI";
 
+    public static final String TAMPIL_POPUP = "TAMPIL_POPUP";
+
     public SharedPreferences sharedPreferences;
     public SharedPreferences.Editor sharedEditor;
 
@@ -25,6 +27,14 @@ public class Config {
     public void setBukaSaatini(int val){
         sharedEditor.putInt(BUKA_SAATINI, val);
         sharedEditor.commit();
+        sharedEditor.apply();
+    }
+    public boolean getTampilPopup(){
+        return sharedPreferences.getBoolean(TAMPIL_POPUP, true);
+    }
+
+    public void setstatustampil(boolean status){
+        sharedEditor.putBoolean(TAMPIL_POPUP, status);
         sharedEditor.apply();
     }
 

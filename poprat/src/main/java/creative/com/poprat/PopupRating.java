@@ -25,7 +25,10 @@ public class PopupRating {
         activity_saatini = context;
 
         if (config.getIntSaatIni() > config.getIntSetiap()){
-            tampilPopup();
+            if (config.getTampilPopup()){
+                tampilPopup();
+            }
+            config.setBukaSaatini(0);
         }else {
             int nilai = config.getIntSaatIni();
             config.setBukaSaatini(nilai+1);
@@ -78,6 +81,7 @@ public class PopupRating {
                     } catch (android.content.ActivityNotFoundException anfe) {
                         activity_saatini.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
                     }
+                    config.setstatustampil(false);
                     k.cancel();
                 }
 
